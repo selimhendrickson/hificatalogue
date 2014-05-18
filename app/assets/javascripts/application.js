@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap
+$(function () {
+  $('#loginlink').popover({ 
+    html : true,
+    title: "Enter your credentials",
+  	content: function() {
+          return $('#popover-content').html();
+        }
+  });
+});

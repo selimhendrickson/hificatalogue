@@ -1,0 +1,26 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "Hi-fi Catalog", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <li class="btn btn-primary"
+              data-container="body" data-toggle="popover" 
+              data-placement="bottom" 
+              id="loginlink">Sign in</li>
+              <div id="popover-content" class="hide">
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Username" class="form-control" maxlength="5">
+                    <input type="password" placeholder="Password" class="form-control" maxlength="5">
+                    <button type="submit" class="btn btn-primary">Go To Login »</button>                                  
+                  </div>
+                </form>
+              </div>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
